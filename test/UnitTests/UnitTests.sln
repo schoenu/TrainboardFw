@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FsmCppTests", "FsmCppTests\FsmCppTests.vcxproj", "{82935861-2235-42BF-9A89-C43000691466}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataConversionTests", "DataValidationTests\DataValidationTests.vcxproj", "{6E057A0A-089B-4A78-8CF6-D46917102FFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataManagementTests", "DataManagementTests\DataManagementTests.vcxproj", "{464874DF-8E6C-4F4B-AAD1-96F296947199}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LedManagerTests", "LedManagerTests\LedManagerTests.vcxproj", "{355B3339-7276-4A8A-9E12-24D06F649FA7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TimerTests", "TimerTests\TimerTests.vcxproj", "{EE77654A-9F68-4297-B8C0-45608B515E66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82935861-2235-42BF-9A89-C43000691466}.Debug|x86.ActiveCfg = Debug|Win32
+		{82935861-2235-42BF-9A89-C43000691466}.Debug|x86.Build.0 = Debug|Win32
+		{6E057A0A-089B-4A78-8CF6-D46917102FFD}.Debug|x86.ActiveCfg = Debug|Win32
+		{6E057A0A-089B-4A78-8CF6-D46917102FFD}.Debug|x86.Build.0 = Debug|Win32
+		{464874DF-8E6C-4F4B-AAD1-96F296947199}.Debug|x86.ActiveCfg = Debug|Win32
+		{464874DF-8E6C-4F4B-AAD1-96F296947199}.Debug|x86.Build.0 = Debug|Win32
+		{355B3339-7276-4A8A-9E12-24D06F649FA7}.Debug|x86.ActiveCfg = Debug|Win32
+		{355B3339-7276-4A8A-9E12-24D06F649FA7}.Debug|x86.Build.0 = Debug|Win32
+		{EE77654A-9F68-4297-B8C0-45608B515E66}.Debug|x86.ActiveCfg = Debug|Win32
+		{EE77654A-9F68-4297-B8C0-45608B515E66}.Debug|x86.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86FE9C4F-2FFD-4E00-BEFA-0E0A4603DBD7}
+	EndGlobalSection
+EndGlobal

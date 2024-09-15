@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="test_SmoothTransition.cpp" />
+    <ClCompile Include="test_MultipleStrips.cpp" />
+    <ClCompile Include="test_StatusLeds.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUT">
+      <UniqueIdentifier>{177e7ed4-4fd0-4ed7-be63-e4baa4e79628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{472e27f0-7ac2-42f6-93b9-2940819286c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{f19b4fc4-d53c-426a-91cb-bbec9a421ad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mocks">
+      <UniqueIdentifier>{9216356e-f781-4dca-b344-317d4bfcc184}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\Interfaces\LedManager.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Util\Logging.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Led\Led.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Interfaces\LedStrip.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Led\LedManager_Trainboard.h">
+      <Filter>CUT</Filter>
+    </ClInclude>
+    <ClInclude Include="TestLedStrip.h">
+      <Filter>Mocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Interfaces\LedPresenter.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

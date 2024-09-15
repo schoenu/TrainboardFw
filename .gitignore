@@ -1,0 +1,17 @@
+test/UnitTests/Debug/
+test/UnitTests/packages
+test/UnitTests/x64/
+test/UnitTests/FsmCppTests/Debug
+test/UnitTests/FsmCppTests/x64
+.vs/
+.pio/
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+test/UnitTests/TrainboardFsmTests/Debug/
+test/UnitTests/DataValidationTests/Debug/
+test/UnitTests/DataManagementTests/Debug/
+test/UnitTests/LedManagerTests/Debug/
+build/BuildInfo.h
+test/UnitTests/TimerTests/Debug/
+.vscode/extensions.json
+*.bkp

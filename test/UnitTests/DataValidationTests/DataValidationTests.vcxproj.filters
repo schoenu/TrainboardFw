@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="test_IsDataValid.cpp" />
+    <ClCompile Include="..\..\..\src\Led\DataConverter.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="test_IsHistoryDataValid.cpp" />
+    <ClCompile Include="test_DataToLeds.cpp" />
+    <ClCompile Include="..\Common\blob_HistoryData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUT">
+      <UniqueIdentifier>{7c8e0f9b-fe41-44b5-b0b0-8184e1aee0c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{9db5d6ef-51c5-437e-b2a9-c4c65c85f428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{bd0570db-d965-4d9a-9931-cdf9cbba82d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\Interfaces\DataConverter.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\BoardConfigurationConstants.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Util\Logging.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\blob_HistoryData.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

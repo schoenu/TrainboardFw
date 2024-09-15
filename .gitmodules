@@ -1,0 +1,7 @@
+
+[submodule "vendor/etl"]
+	path = vendor/etl
+	url = https://github.com/ETLCPP/etl.git
+[submodule "vendor/fff"]
+	path = vendor/fff
+	url = https://github.com/meekrosoft/fff.git

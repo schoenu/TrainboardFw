@@ -1,0 +1,5 @@
+---
+Checks:            '-*,cppcoreguidelines-*,modernize-*,bugprone-*,google-readability-casting,google-readability-braces-around-statements,google-readability-function-size,hicpp-static-assert,hicpp-use-auto,misc-const-correctness,-cppcoreguidelines-virtual-class-destructor,-cppcoreguidelines-special-member-functions,-bugprone-easily-swappable-parameters,-cppcoreguidelines-non-private-member-variables-in-classes,-cppcoreguidelines-avoid-const-or-ref-data-members,-modernize-macro-to-enum,-cppcoreguidelines-avoid-non-const-global-variables'
+WarningsAsErrors:  ''
+HeaderFilterRegex: '_'
+FormatStyle:       'file'

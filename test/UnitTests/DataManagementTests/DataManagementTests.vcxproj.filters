@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\Database\DataManager.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="test_LiveStore.cpp" />
+    <ClCompile Include="test_HistoryStore.cpp" />
+    <ClCompile Include="test_FakeStore.cpp" />
+    <ClCompile Include="..\Common\blob_HistoryData.cpp" />
+    <ClCompile Include="..\..\..\src\Database\FakeData.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUT">
+      <UniqueIdentifier>{75c2da0a-857a-41f7-b1a7-0378729d43ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{3a67e14b-0020-4f85-9a81-09ebfbf2ee90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{4c2c838f-5618-4c3d-a809-c9e17e7758cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\Interfaces\DataManager.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Util\Logging.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\blob_HistoryData.hpp" />
+    <ClInclude Include="..\..\..\src\Database\DataManagerTypes.h">
+      <Filter>CUT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Database\FakeData.h">
+      <Filter>CUT</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

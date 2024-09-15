@@ -1,0 +1,65 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: UnitTests
+
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
+      - ci/*
+      - feat/*
+  pull_request:
+    branches:
+      - develop
+
+
+env:
+  # Path to the solution file relative to the root of the project.
+  SOLUTION_FILE_PATH: ./test/UnitTests/UnitTests.sln
+
+  # Configuration type to build.
+  # You can convert this to a build matrix if you need coverage of multiple configuration types.
+  # https://docs.github.com/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
+  BUILD_CONFIGURATION: Debug
+
+  # Executables to run the unit tests
+  FSM_TEST_EXECUTABLE: ./test/UnitTests/Debug/FsmCppTests.exe
+  TRAINBOARD_TEST_EXECUTABLE: ./test/UnitTests/Debug/TrainboardFsmTests.exe
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout with submodules
+      uses: actions/checkout@v3
+      with:
+        submodules: true
+
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    - name: Restore NuGet packages
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      run: nuget restore ${{env.SOLUTION_FILE_PATH}}
+
+    - name: Setup Python 3
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Update fw version
+      run: python3 build/prebuild.py
+
+    - name: Build Solution
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      # Add additional options to the MSBuild command line here (like platform or verbosity level).
+      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
+      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}

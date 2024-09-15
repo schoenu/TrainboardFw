@@ -1,0 +1,27 @@
+{
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "optional": "cpp",
+        "system_error": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "sstream": "cpp",
+        "cstdint": "cpp",
+        "algorithm": "cpp",
+        "deque": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "initializer_list": "cpp",
+        "bitset": "cpp",
+        "rope": "cpp",
+        "dynamic_bitset": "cpp",
+        "valarray": "cpp"
+    },
+    "cmake.configureOnOpen": false,
+}
