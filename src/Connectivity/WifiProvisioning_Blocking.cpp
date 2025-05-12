@@ -34,7 +34,14 @@ std::optional<bool> WifiProv_Connect(uint32_t timeout_s)
         _wifi_manager.disconnect();
     }
     was_connected = true;
-    return _wifi_manager.autoConnect();
+
+    // add last two bytes of mac address to access point name
+    static char combinedAccessPointName[strlen(kAccessPointName) + 6];
+    uint8_t mac[6];
+    esp_read_mac(mac, ESP_MAC_WIFI_STA);
+    snprintf(combinedAccessPointName, sizeof(combinedAccessPointName), "%s_%02X%02X", kAccessPointName, mac[4], mac[5]);
+
+    return _wifi_manager.autoConnect(combinedAccessPointName);
 }
 bool WifiProv_IsConnectedToWifi()
 {
